@@ -99,7 +99,9 @@ select {
   left: 0;
   margin-left: -5px;
   margin-top: -5px;
-  color: orange;
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
 }
 .roky{
   z-index:12;
@@ -422,7 +424,7 @@ function zmenaRokuA() {
 	var dropListA = document.getElementById("yearsIDa");
 	var hodnotaA = dropListA.options[dropListA.selectedIndex].value;
      document.getElementById("imgA").src=hodnotaA+".jpg";
-     document.getElementById("loaderID").innerHTML = "...loading";
+     document.getElementById("loaderID").innerHTML = "...LOADING";
      vykreslenyRokA=hodnotaA;
      zmenRokyInfo();
 }
@@ -430,12 +432,12 @@ function zmenaRokuB() {
 	var dropListB = document.getElementById("yearsIDb");
 	var hodnotaB = dropListB.options[dropListB.selectedIndex].value;
      document.getElementById("imgB").src=hodnotaB+".jpg";
-     document.getElementById("loaderID").innerHTML = "...loading";
+     document.getElementById("loaderID").innerHTML = "...LOADING";
      vykreslenyRokB=hodnotaB;
      zmenRokyInfo();
 }
 function loadedMap() {
-  if(document.getElementById("imgB").complete && document.getElementById("imgA").complete) setTimeout(postponeLoad, 2000);
+  if(document.getElementById("imgB").complete && document.getElementById("imgA").complete) setTimeout(postponeLoad, 5000);
 }
 function postponeLoad() {
   document.getElementById("loaderID").innerHTML = "";
@@ -493,7 +495,7 @@ function loadDocument() {}
   <option value="2021" style="background-color:#fffcab;color:#000000;">2021</option>
  </select>
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
- cunovske.jazera.bez.odpadkov@gmail.com
+ zlate.piesky@gmail.com
 </div>
 <div class="img-comp-container" id="kont">
  <div class="vycenter" id="vycenterID">
@@ -502,7 +504,7 @@ function loadDocument() {}
       <img src="1978.jpg" id="imgB" width="756px" height="581px" onload="loadedMap()">
     </div>
     <div class="img-comp-img img-comp-overlay" id="kontA">
-      <img src="1969.jpg" id="imgA" width="756px" height="581px" onload="loadedMap()">
+      <img src="1961.jpg" id="imgA" width="756px" height="581px" onload="loadedMap()">
     </div>
    </div>
   </div>
